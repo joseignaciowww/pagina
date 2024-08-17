@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f90101;
+    padding-top: 300px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #1aa90a;
+}
+p {
+    margin-bottom: 40px;
+}
+
+.contenedor-imagen {
+    justify-content: center; 
+    margin: 20px 0;           
+}
+
+.img-derecha {
+    width: 750px;             
+    height: 400px;             
+}
+
+.imagen-fondo {
+    position: fixed;       
+    top: 0;               
+    left: 0;              
+    width: 100vw;         
+    height: 100vh;        
+    object-fit: cover;    
+    z-index: -1;            
+}
+
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(-800px);
+    }
+    100% {
+        transform: translateX(0px); 
+    }
+
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+
+}
+
+.header {
+
+    animation: moverDerecha 0s ease-out ;
+}
+.container {
+
+    animation: moverDerecha 0.5s ease-out ; 
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #02a107;
+    border-radius: 9px;
+    border: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+.sub-logo1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sub-logo2 {
+    position: absolute;
+    left: 750px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #1d1e1c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+a:hover{
+    color: #093504;
+    transition: opacity 0.3s;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 80px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
